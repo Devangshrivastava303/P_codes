@@ -23,7 +23,7 @@ def run():
     cuda_kernel((blocks,), (threads_per_block,), (A, B, C, N))
     cp.cuda.Stream.null.synchronize()
 
-    print("✅ Kernel ran successfully!")
+    print("Kernel ran successfully!")
     print("Result sample:", C[:5])
 
 if __name__ == "__main__":
