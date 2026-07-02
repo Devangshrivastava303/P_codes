@@ -1,4 +1,4 @@
-import cupy as cp
+import cupy as cp # type: ignore
 
 cuda_kernel = cp.RawKernel(r'''
 extern "C" __global__
